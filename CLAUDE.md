@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Bối cảnh đồ án
 
-- Đồ án môn **Ngôn ngữ lập trình C#** – Trường ĐH Sài Gòn, Khoa CNTT. GVGD: **TS. Đỗ Như Tài**. Nhóm 10 gồm **3 thành viên** (chốt 2026-10-30): Phạm Hoàng Sang (GitHub `tom-1209-pixel`), Võ Trần Hải Đăng (`dangvotranhai-dot`), Ngô Hồ Đăng Khoa (`khoango6688-collab`).
+- Đồ án môn **Ngôn ngữ lập trình C#** – Trường ĐH Sài Gòn, Khoa CNTT. GVGD: **TS. Đỗ Như Tài**. **Nhóm 12** (số nhóm đúng là 12, không phải 10 – chốt 2026-10-30), gồm **3 thành viên**: Phạm Hoàng Sang – 3124411256 (GitHub `tom-1209-pixel`), Võ Trần Hải Đăng – 3124411069 (`dangvotranhai-dot`), Ngô Hồ Đăng Khoa – 3124411130 (`khoango6688-collab`).
 - Đề tài: **Hệ thống quản lý và bán sách trực tuyến**. Nội bộ: kế thừa kết quả phân tích từ đồ án PTTK HĐT "Hệ thống quản lý nhà sách" của nhóm, nhưng **báo cáo không được nhắc tới đồ án cũ** (theo yêu cầu người dùng, 2026-10-23) – trình bày như một đề tài độc lập.
 - Hiện **chưa có mã nguồn**. Đang ở GD1 (báo cáo phân tích).
 
@@ -22,10 +22,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 | Hạng mục | Trạng thái | Ghi chú |
 |---|---|---|
-| Báo cáo GD1 | Xong nội dung | 82 trang, 34 hình ở Ch.3, mục lục đã có số trang. Bìa còn trống MSSV và còn thừa 1 dòng thành viên thứ 4 cần xóa |
+| Báo cáo GD1 | Xong | 82 trang, 34 hình ở Ch.3, mục lục đã có số trang. Bìa đã đủ 3 thành viên kèm MSSV (nhóm tự sửa tay trong Word) và đã đổi sang Nhóm 12 |
 | Sơ đồ UML trong báo cáo | Dùng được | Vẽ bằng matplotlib. Quan hệ «extend» đã vẽ được (sửa 2026-10-30). Nếu thầy yêu cầu ký hiệu UML chuẩn thì vẽ lại bằng StarUML/draw.io |
 | Slide GD1 | Chưa làm | Thầy yêu cầu nộp kèm |
-| File nén nộp GD1 | Chưa làm | `CK_GD1_Nhom10_HoTen_MaSV.zip` |
+| File nén nộp GD1 | Đang làm | `CK_GD1_Nhom12_PhamHoangSang_3124411256.zip`; còn chờ slide |
 | Git repo | Xong | `git init` + commit đầu, đẩy lên https://github.com/tom-1209-pixel/QuanLyBanSachTrucTuyen (public, nhánh `main`). Chưa mời 3 thành viên làm collaborator (cần username GitHub của các bạn) |
 | Solution và 7 project | Chưa tạo | Xem mục "Kiến trúc đã chốt" |
 | Cơ sở dữ liệu | Mới có thiết kế | 19 bảng trong Ch.3 báo cáo, chưa có migration |
@@ -35,7 +35,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Bước tiếp theo
 
-1. Nhóm điền MSSV vào bìa báo cáo và **xóa dòng thành viên thứ 4 còn trống** (nhóm chỉ có 3 người); sửa luôn bảng thành viên trong `README.md`.
+1. Làm slide GD1 rồi nén gói nộp `CK_GD1_Nhom12_PhamHoangSang_3124411256.zip` (báo cáo + slide + file phân tích).
 2. **Chờ hỏi thầy**: có được tách 24 bảng đặc tả use case ra khỏi mục 3.2.4 không (3.2.4 đang chiếm trang 23–51; riêng đặc tả ~20 trang). Ba phương án đã cân nhắc: phụ lục cuối báo cáo (an toàn nhất, link nội bộ không chết khi xuất PDF), file riêng `DacTaUseCase_Nhom10.docx` kèm hyperlink tương đối (báo cáo còn ~62 trang nhưng link chết nếu mở từ zip hoặc xuất PDF), hoặc làm cả hai. Người dùng quyết định giữ nguyên cho tới khi hỏi được thầy (2026-10-30).
 3. (Tùy chọn, phần còn lại của bản rà soát) Bổ sung đặc tả cho các use case còn thiếu (Đổi mật khẩu, Lọc sách, Xem lịch sử đơn, Cập nhật thông tin cá nhân, In hóa đơn, Hủy đơn phía nhân viên, Quản lý nhân viên, Báo cáo nhập – xuất – tồn, Cảnh báo tồn kho) hoặc ghi rõ ở đầu 3.2.4 là chỉ đặc tả các use case tiêu biểu; thêm danh mục hình, danh mục bảng, bảng phân công nếu mẫu của trường yêu cầu.
 4. Làm slide GD1 tóm tắt Ch.1–3; nén file nộp.

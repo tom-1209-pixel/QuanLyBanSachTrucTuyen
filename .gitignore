@@ -107,3 +107,4 @@ $RECYCLE.BIN/
 
 # ---------- Claude Code (cuc bo) ----------
 .claude/settings.local.json
+*.docx.new

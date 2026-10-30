@@ -129,7 +129,11 @@ function ucSpec(u) {
 const coverLine = (t, o = {}) => new Paragraph({ alignment: o.align || AlignmentType.CENTER,
   spacing: { after: o.after ?? 60, before: o.before ?? 0 }, indent: o.indent ? { left: o.indent } : undefined,
   children: [run(t, { bold: o.bold, size: o.size || 26 })] });
-const MEMBERS = ["PHẠM HOÀNG SANG", "VÕ TRẦN HẢI ĐĂNG", "NGÔ HỒ ĐĂNG KHOA", "……………………………"];
+const MEMBERS = [
+  ["PHẠM HOÀNG SANG", "3124411256"],
+  ["VÕ TRẦN HẢI ĐĂNG", "3124411069"],
+  ["NGÔ HỒ ĐĂNG KHOA", "3124411130"],
+];
 const cover = [
   coverLine("ỦY BAN NHÂN DÂN TP. HỒ CHÍ MINH", { bold: true, size: 28 }),
   coverLine("TRƯỜNG ĐẠI HỌC SÀI GÒN", { bold: true, size: 28 }),
@@ -139,10 +143,10 @@ const cover = [
   coverLine("GIAI ĐOẠN 1: TỔNG QUAN VÀ PHÂN TÍCH HỆ THỐNG", { bold: true, size: 26, after: 500 }),
   coverLine("Tên đề tài:", { bold: true, size: 28, after: 80 }),
   coverLine("HỆ THỐNG QUẢN LÝ VÀ BÁN SÁCH TRỰC TUYẾN", { bold: true, size: 36, after: 1200 }),
-  coverLine("Nhóm thực hiện: 10", { align: AlignmentType.LEFT, indent: 2600, bold: true }),
+  coverLine("Nhóm thực hiện: 12", { align: AlignmentType.LEFT, indent: 2600, bold: true }),
   coverLine("Giảng viên hướng dẫn: TS. ĐỖ NHƯ TÀI",{ align: AlignmentType.LEFT, indent: 2600, bold: true }),
   coverLine("Sinh viên thực hiện:", { align: AlignmentType.LEFT, indent: 2600, bold: true }),
-  ...MEMBERS.map((m, i) => coverLine(`${i + 1}. ${m} – MSSV: ……………`, { align: AlignmentType.LEFT, indent: 2900 })),
+  ...MEMBERS.map(([ten, mssv], i) => coverLine(`${i + 1}. ${ten} – MSSV: ${mssv}`, { align: AlignmentType.LEFT, indent: 2900 })),
   coverLine("TP. HỒ CHÍ MINH, THÁNG 10 NĂM 2026", { bold: true, before: 1800 }),
 ];
 
@@ -720,7 +724,7 @@ const refs = [
 
 // ------------------------------------------------------------------ document
 const doc = new Document({
-  creator: "Nhóm 10", title: "Hệ thống quản lý và bán sách trực tuyến – Báo cáo GD1",
+  creator: "Nhóm 12", title: "Hệ thống quản lý và bán sách trực tuyến – Báo cáo GD1",
   features: { updateFields: true },
   styles: {
     default: { document: { run: { font: FONT, size: 26 } } },

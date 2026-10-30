@@ -1,7 +1,7 @@
 # Hệ thống quản lý và bán sách trực tuyến
 
 Đồ án môn **Ngôn ngữ lập trình C#** – Trường Đại học Sài Gòn, Khoa Công nghệ Thông tin.
-Giảng viên giảng dạy: **TS. Đỗ Như Tài**. Nhóm **10**.
+Giảng viên giảng dạy: **TS. Đỗ Như Tài**. Nhóm **12**.
 
 Hệ thống gồm hai thành phần dùng chung một cơ sở dữ liệu Microsoft SQL Server:
 
@@ -12,11 +12,11 @@ Hệ thống gồm hai thành phần dùng chung một cơ sở dữ liệu Micr
 
 | STT | Họ và tên | MSSV | Công việc chính |
 |-----|-----------|------|-----------------|
-| 1 | Phạm Hoàng Sang | | |
-| 2 | Võ Trần Hải Đăng | | |
-| 3 | Ngô Hồ Đăng Khoa | | |
+| 1 | Phạm Hoàng Sang | 3124411256 | |
+| 2 | Võ Trần Hải Đăng | 3124411069 | |
+| 3 | Ngô Hồ Đăng Khoa | 3124411130 | |
 
-> Các bạn tự điền MSSV và phần công việc của mình vào bảng này (xem mục [Quy trình làm việc](#quy-trình-làm-việc-trên-github) để biết cách sửa).
+> Các bạn tự điền phần công việc của mình vào cột cuối (xem mục [Quy trình làm việc](#quy-trình-làm-việc-trên-github) để biết cách sửa).
 
 ## Trạng thái
 
@@ -61,12 +61,17 @@ Solution `BookStore.sln` gồm 7 project:
 ├── QuanLyBanSachTrucTuyen_GD1.docx     Báo cáo giai đoạn 1
 ├── De tai mon Ngon ngu lap trinh CSharp - 2026.pdf
 ├── Hỏi.txt                             Những điểm còn cần hỏi giảng viên
+├── Slide_GD1_Nhom12.pptx               Slide báo cáo giai đoạn 1
 ├── CLAUDE.md                           Ghi chú bàn giao giữa các phiên làm việc
-└── tools/bao-cao/                      Script sinh báo cáo .docx
-    ├── diagrams.py                     Vẽ toàn bộ hình ra img/
-    ├── usecases.js                     Dữ liệu đặc tả use case
-    ├── build.js                        Dựng file .docx
-    └── img/                            Hình đã vẽ (34 hình)
+└── tools/
+    ├── bao-cao/                        Script sinh báo cáo .docx
+    │   ├── diagrams.py                 Vẽ toàn bộ hình ra img/
+    │   ├── usecases.js                 Dữ liệu đặc tả use case
+    │   ├── build.js                    Dựng file .docx
+    │   └── img/                        Hình đã vẽ (34 hình)
+    └── slide/                          Script sinh slide .pptx
+        ├── build-slide.js              Dựng 20 slide, dùng lại hình trong bao-cao/img
+        └── apply-theme.js              Ghi bảng màu của nhóm vào theme của file .pptx
 ```
 
 Mã nguồn sẽ nằm trong `src/` (các project) và `tests/` khi tạo solution.
@@ -105,6 +110,16 @@ node build.js QuanLyBanSachTrucTuyen_GD1.docx
 Sau đó mở file bằng Word và cập nhật mục lục (`Ctrl+A` rồi `F9`), vì script để trường mục lục ở trạng thái chưa cập nhật.
 
 > Chỉ sinh lại đè lên báo cáo khi chắc chắn chưa ai sửa tay trong Word, nếu không sẽ mất phần sửa đó.
+
+### Sinh lại slide
+
+```bash
+cd tools/slide
+npm install
+node build-slide.js
+```
+
+Script lấy lại các hình trong `tools/bao-cao/img/` nên phải chạy `diagrams.py` trước nếu hình bị thiếu. Đóng file `.pptx` trong PowerPoint trước khi chạy, nếu không sẽ báo lỗi không ghi được file.
 
 ## Quy trình làm việc trên GitHub
 
