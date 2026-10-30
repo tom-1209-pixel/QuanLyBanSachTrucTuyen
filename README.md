@@ -15,7 +15,6 @@ Hệ thống gồm hai thành phần dùng chung một cơ sở dữ liệu Micr
 | 1 | Phạm Hoàng Sang | | |
 | 2 | Võ Trần Hải Đăng | | |
 | 3 | Ngô Hồ Đăng Khoa | | |
-| 4 | | | |
 
 > Các bạn tự điền MSSV và phần công việc của mình vào bảng này (xem mục [Quy trình làm việc](#quy-trình-làm-việc-trên-github) để biết cách sửa).
 

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Bối cảnh đồ án
 
-- Đồ án môn **Ngôn ngữ lập trình C#** – Trường ĐH Sài Gòn, Khoa CNTT. GVGD: **TS. Đỗ Như Tài**. Nhóm 10 (tối đa 4 SV): Phạm Hoàng Sang, Võ Trần Hải Đăng, Ngô Hồ Đăng Khoa + 1 người chưa điền.
+- Đồ án môn **Ngôn ngữ lập trình C#** – Trường ĐH Sài Gòn, Khoa CNTT. GVGD: **TS. Đỗ Như Tài**. Nhóm 10 gồm **3 thành viên** (chốt 2026-10-30): Phạm Hoàng Sang (GitHub `tom-1209-pixel`), Võ Trần Hải Đăng (`dangvotranhai-dot`), Ngô Hồ Đăng Khoa (`khoango6688-collab`).
 - Đề tài: **Hệ thống quản lý và bán sách trực tuyến**. Nội bộ: kế thừa kết quả phân tích từ đồ án PTTK HĐT "Hệ thống quản lý nhà sách" của nhóm, nhưng **báo cáo không được nhắc tới đồ án cũ** (theo yêu cầu người dùng, 2026-10-23) – trình bày như một đề tài độc lập.
 - Hiện **chưa có mã nguồn**. Đang ở GD1 (báo cáo phân tích).
 
@@ -22,7 +22,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 | Hạng mục | Trạng thái | Ghi chú |
 |---|---|---|
-| Báo cáo GD1 | Xong nội dung | 82 trang, 34 hình ở Ch.3, mục lục đã có số trang. Bìa còn trống MSSV và tên thành viên thứ 4 |
+| Báo cáo GD1 | Xong nội dung | 82 trang, 34 hình ở Ch.3, mục lục đã có số trang. Bìa còn trống MSSV và còn thừa 1 dòng thành viên thứ 4 cần xóa |
 | Sơ đồ UML trong báo cáo | Dùng được | Vẽ bằng matplotlib. Quan hệ «extend» đã vẽ được (sửa 2026-10-30). Nếu thầy yêu cầu ký hiệu UML chuẩn thì vẽ lại bằng StarUML/draw.io |
 | Slide GD1 | Chưa làm | Thầy yêu cầu nộp kèm |
 | File nén nộp GD1 | Chưa làm | `CK_GD1_Nhom10_HoTen_MaSV.zip` |
@@ -35,7 +35,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Bước tiếp theo
 
-1. Nhóm điền MSSV, thành viên thứ 4 vào bìa báo cáo.
+1. Nhóm điền MSSV vào bìa báo cáo và **xóa dòng thành viên thứ 4 còn trống** (nhóm chỉ có 3 người); sửa luôn bảng thành viên trong `README.md`.
 2. **Chờ hỏi thầy**: có được tách 24 bảng đặc tả use case ra khỏi mục 3.2.4 không (3.2.4 đang chiếm trang 23–51; riêng đặc tả ~20 trang). Ba phương án đã cân nhắc: phụ lục cuối báo cáo (an toàn nhất, link nội bộ không chết khi xuất PDF), file riêng `DacTaUseCase_Nhom10.docx` kèm hyperlink tương đối (báo cáo còn ~62 trang nhưng link chết nếu mở từ zip hoặc xuất PDF), hoặc làm cả hai. Người dùng quyết định giữ nguyên cho tới khi hỏi được thầy (2026-10-30).
 3. (Tùy chọn, phần còn lại của bản rà soát) Bổ sung đặc tả cho các use case còn thiếu (Đổi mật khẩu, Lọc sách, Xem lịch sử đơn, Cập nhật thông tin cá nhân, In hóa đơn, Hủy đơn phía nhân viên, Quản lý nhân viên, Báo cáo nhập – xuất – tồn, Cảnh báo tồn kho) hoặc ghi rõ ở đầu 3.2.4 là chỉ đặc tả các use case tiêu biểu; thêm danh mục hình, danh mục bảng, bảng phân công nếu mẫu của trường yêu cầu.
 4. Làm slide GD1 tóm tắt Ch.1–3; nén file nộp.
@@ -64,7 +64,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | Sách đã có giao dịch chỉ chuyển Ngừng kinh doanh | Giữ toàn vẹn đơn hàng, phiếu nhập cũ |
 | Phiếu nhập chỉ cộng tồn khi Hoàn thành | Kế thừa quy trình đồ án PTTK; tồn kho khớp hàng thực nhận |
 | Tên bảng/cột tiếng Việt không dấu | Thống nhất với báo cáo PTTK cũ |
-| Bìa giữ 3 thành viên (Sang, Đăng, Khoa) + 1 dòng trống | Theo yêu cầu người dùng; đề giới hạn 4 SV/nhóm |
+| Nhóm chốt 3 thành viên, bỏ dòng thứ 4 (2026-10-30) | Người dùng xác nhận nhóm chỉ có Sang, Đăng, Khoa. Trước đó bìa để sẵn 1 dòng trống phòng khi có người thứ 4; nay dòng đó phải xóa khỏi bìa báo cáo và đã xóa khỏi `README.md` |
 | Bỏ khuyến mãi và đánh giá sách khỏi phạm vi (2026-10-23) | Người dùng yêu cầu tinh gọn tính năng; giảm 2 bảng, 1 subsystem, 2 đặc tả use case, 3 user story, 2 quy tắc nghiệp vụ. Vẫn giữ VNPay, email, sổ địa chỉ giao hàng. Hai tính năng được ghi ở mục "giai đoạn phát triển sau" của 1.5 để báo cáo không tự mâu thuẫn |
 | Báo cáo trình bày như đề tài độc lập, không nhắc đồ án PTTK cũ (2026-10-23) | Người dùng yêu cầu; đã bỏ ở 1.1.1, 1.1.3, 3.1.4 và tài liệu tham khảo |
 | Identity dùng user store tùy biến trên bảng TaiKhoan/VaiTro (2026-10-30) | Báo cáo khai Identity nhưng bảng TaiKhoan không có cột khóa tài khoản và token; giữ Identity để lấy điểm sáng tạo, đồng thời giữ dữ liệu tài khoản trong lược đồ chung thay vì bộ bảng AspNetUsers/AspNetRoles |
