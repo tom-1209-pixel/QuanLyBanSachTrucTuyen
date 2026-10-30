@@ -108,3 +108,6 @@ $RECYCLE.BIN/
 # ---------- Claude Code (cuc bo) ----------
 .claude/settings.local.json
 *.docx.new
+
+# ---------- Goi nop (sinh lai duoc tu cac file trong repo) ----------
+CK_GD1_*.zip
