@@ -1,0 +1,31 @@
+# Chuan hoa line ending: trong repo luu LF, tren may Windows checkout CRLF
+* text=auto
+
+*.cs      text diff=csharp
+*.csproj  text eol=crlf
+*.sln     text eol=crlf
+*.xaml    text
+*.razor   text
+*.json    text
+*.md      text
+*.js      text
+*.py      text
+*.sql     text
+*.ps1     text eol=crlf
+*.cmd     text eol=crlf
+*.bat     text eol=crlf
+*.sh      text eol=lf
+
+# File nhi phan: khong dung dinh dang, khong diff
+*.docx binary
+*.doc  binary
+*.pdf  binary
+*.pptx binary
+*.xlsx binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.zip  binary
+*.snk  binary

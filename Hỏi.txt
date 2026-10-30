@@ -1,0 +1,5 @@
+Mấy ý để hỏi thầy cho gọn:
+
+Đặc tả use case có bắt buộc nằm trong thân Chương 3, hay để phụ lục / file riêng được không?
+Có cần đặc tả tất cả use case không, hay chỉ các use case tiêu biểu là đủ? (Hiện có 24/40 use case được đặc tả.)
+Gói nộp CK_GD1_Nhom10_...zip yêu cầu “file phân tích” riêng — thầy muốn file đó chứa gì?
