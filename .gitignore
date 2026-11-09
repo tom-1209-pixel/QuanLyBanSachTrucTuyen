@@ -1,0 +1,14 @@
+# File tam cua Word / WPS
+~$*
+*.tmp
+*.asd
+*.docx.new
+
+# He dieu hanh
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Cuc bo
+.claude/settings.local.json
